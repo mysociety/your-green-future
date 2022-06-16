@@ -1,0 +1,7 @@
+.triangle-down {
+    @include equilateral-triangle("down", 1em, $display: inline-block);
+}
+
+.triangle-up {
+    @include equilateral-triangle("up", 1em, $display: inline-block);
+}

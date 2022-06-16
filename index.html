@@ -3,18 +3,28 @@ layout: default
 ---
 
 <div class="container py-4 py-md-5">
-    <h1>Your Green Future</h1>
 
-    <form class="p-3 border border-radius mt-5" action="{{ "/area" | relative_url }}">
-        <h2 class="mb-4">See the changes unfolding in your area</h2>
-        <p>
-            <label class="form-label" for="job">Your current job</label>
-            <input class="form-control form-control-lg" type="text" id="job">
-        </p>
-        <label class="form-label" for="postcode">Your postcode</label>
-        <div class="d-flex">
-            <input class="form-control form-control-lg" type="text" id="postcode">
-            <button class="btn btn-lg btn-primary ms-3">Search</button>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <p class="h1 mb-4">Climate impacts are hitting home, but together we can rise to the challenge and respond.</p>
+            <p>The UK workforce should be at the heart of this. Not all of the work we do today will exist in the future. But good, green jobs offer new opportunities to step up and play our part.</p>
+            <p>We need green jobs for warmer homes, cleaner air and better access to nature. And while some are available now, the UK needs to create many more now and for years to come.</p>
         </div>
-    </form>
+        <div class="col-lg-5 ms-lg-auto mb-4">
+            <form class="bg-white shadow-lg p-4 border rounded" action="{{ "/area" | relative_url }}">
+                <h2 class="h3">Explore your area’s green job potential</h2>
+                <p>And discover how it could be improved for future generations.</p>
+                <p class="mt-4">
+                    <label class="form-label" for="job">Your current job</label>
+                    <input class="form-control form-control-lg" type="text" id="job">
+                </p>
+                <label class="form-label" for="postcode">Your postcode</label>
+                <div class="d-flex">
+                    <input class="form-control form-control-lg" type="text" id="postcode">
+                    <button class="btn btn-lg btn-primary ms-3">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </div>

@@ -1,5 +1,7 @@
 // Color system
 
+$gray-100: #f8f9fa;
+
 // Options
 
 $enable-shadows: true;
@@ -12,6 +14,8 @@ $enable-negative-margins: true;
 // Position
 
 // Body
+
+$body-bg: $gray-100;
 
 // Utilities maps
 
@@ -43,6 +47,10 @@ $container-max-widths: (
 // Components
 
 // Typography
+
+$font-family-sans-serif: 'Open Sans', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-weight: 800;
 
 // Tables
 

@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -28,7 +29,7 @@
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/list-group";
 // @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 // @import "bootstrap/scss/modal";
@@ -39,3 +40,6 @@
 // @import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";
+
+@import "area";
+@import "triangle";
