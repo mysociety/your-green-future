@@ -1,0 +1,47 @@
+---
+layout: default
+slug: quiz
+questions:
+- I like to lead teams.
+- I like knowing what is going on in the world around me.
+- I enjoy reusing, recycling, and finding new possibilities for things.
+- I prefer to work face to face with people.
+- I enjoy working with plants and biology.
+- I like building and crafting things with my hands.
+- I like translating complex information into simple terms.
+- I like to have clear instructions to follow.
+- I like to teach or train people.
+- I am a practical person.
+---
+
+<div class="container py-4 py-md-5">
+    <h1>Your Green Future</h1>
+
+    <a href="{{ "/area" | relative_url }}">Back to stats for Enfield</a>
+
+    <div class="my-4 my-lg-5 text-center">
+        <h2>Which green jobs could be in your future?</h2>
+        <p class="mt-3 mx-auto" style="max-width: 36em">There’s a massive range of green jobs out there. What suits you best? Answer these 10 questions to find out, then follow our suggested next steps for tailored advice on getting the future career you deserve!</p>
+    </div>
+
+    <form action="{{ "recommendations" | relative_url }}">
+      {% for question in page.questions %}
+        <fieldset class="my-5 border p-3 p-md-4 p-lg-5 text-center">
+            <legend class="mb-3">{{ question }}</legend>
+            <ul class="list-inline mt-3 mb-0">
+                <li class="list-inline-item">
+                    <input type="radio" class="btn-check" id="q{{ forloop.index }}a1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="q{{ forloop.index }}a1">Agree</label>
+                </li>
+                <li class="list-inline-item">
+                    <input type="radio" class="btn-check" id="q{{ forloop.index }}a2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="q{{ forloop.index }}a2">Disagree</label>
+                </li>
+            </ul>
+        </fieldset>
+      {% endfor %}
+
+      <button class="btn btn-lg btn-primary d-block mx-auto">See your results</button>
+    </form>
+
+</div>

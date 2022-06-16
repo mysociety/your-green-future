@@ -3,5 +3,18 @@ layout: default
 ---
 
 <div class="container py-4 py-md-5">
-    <h1>Homepage</h1>
+    <h1>Your Green Future</h1>
+
+    <form class="p-3 border border-radius mt-5" action="{{ "/area" | relative_url }}">
+        <h2 class="mb-4">See the changes unfolding in your area</h2>
+        <p>
+            <label class="form-label" for="job">Your current job</label>
+            <input class="form-control form-control-lg" type="text" id="job">
+        </p>
+        <label class="form-label" for="postcode">Your postcode</label>
+        <div class="d-flex">
+            <input class="form-control form-control-lg" type="text" id="postcode">
+            <button class="btn btn-lg btn-primary ms-3">Search</button>
+        </div>
+    </form>
 </div>
